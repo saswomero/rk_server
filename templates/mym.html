@@ -1,0 +1,19 @@
+<html>
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>{{name}}</title>
+</head>
+<body>
+  <img src="http://localhost:5000/static/{{foto}}"
+       height="400">
+  <h1>Имя: {{name}}</h1><br>
+  <h2>Жанр: {{style}}</h2><br>
+  <h2>{{info}}</h2>
+  <br><h2>Песни:</h2>
+  {% for sng in songs: %}
+  <h2>{{sng}}</h2><br>
+  {% endfor %}
+</body>
+</html>
